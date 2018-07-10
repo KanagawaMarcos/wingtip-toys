@@ -1,5 +1,5 @@
 # Wingtip Toys
-It's a simplified example of a store front web site that sells items online. This project mainly porpuse is to learn features available in ASP.NET 4.5.
+It's a simplified example of a store front web site that sells items online. The main purpose of this project is to learn features available in ASP.NET 4.5.
 
 ## Application Features
 

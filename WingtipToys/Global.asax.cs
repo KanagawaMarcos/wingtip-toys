@@ -7,6 +7,9 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
+using System.Data.Entity;
+using WingtipToys.Models;
+
 namespace WingtipToys
 {
     public class Global : HttpApplication
@@ -16,6 +19,9 @@ namespace WingtipToys
             // Código que é executado na inicialização do aplicativo
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            // Initialize the product database.
+            Database.SetInitializer(new ProductDatabaseInitializer);
         }
     }
 }

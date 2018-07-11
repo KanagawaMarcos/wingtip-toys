@@ -10,7 +10,7 @@ namespace WingtipToys.Models
         [Required, StringLength(100), Display(Name = "Name")]
         public string ProductName { get; set; }
 
-        [Required, StringLength(10000), Display(Name = "Product Description)]
+        [Required, StringLength(10000), Display(Name = "Product Description")]
         public string Description { get; set; }
 
         public string ImagePath { get; set; }
@@ -18,7 +18,7 @@ namespace WingtipToys.Models
         [Display(Name = "Price")]
         public double? UnitPrice { get; set; }
 
-        public int? CategoryId { get; set; }
+        public int? CategoryID { get; set; }
 
         public virtual Category Category { get; set; }
         
